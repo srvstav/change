@@ -1,0 +1,14 @@
+{
+  "name": "change-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Builds the change vault into a static site for GitHub Pages.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "release": "node build.mjs && git add -A && git commit -m \"site: rebuild from the vault\" && git push"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}
